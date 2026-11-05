@@ -1,0 +1,22 @@
+# io.pdc - chan I/O cho dht22_uart_top tren PolarFire SoC Discovery Kit (MPFS095T-1FCSG325E).
+# Chan va dien ap bank lay theo thiet ke tham chieu cua Microchip
+# (polarfire-soc-discovery-kit-reference-design, script_support/constraints/*.pdc).
+
+# Bank 0 (HSIO) = 1,8 V: clock 50 MHz, LED, UART_D cua FT4232H.
+# Bank 1 (GPIO) = 3,3 V khi J45 o 1-2 (mac dinh): header Raspberry Pi.
+set_iobank -bank_name Bank0 -vcci 1.80 -fixed true -update_iostd true
+set_iobank -bank_name Bank1 -vcci 3.30 -fixed true -update_iostd true
+
+set_io -port_name REF_CLK_50MHz -pin_name R18 -fixed true -io_std LVCMOS18 -DIRECTION INPUT
+
+# FTDI_UART_D_RXD trong thiet ke tham chieu: FPGA phat -> chan RXD cua FT4232H.
+# Neu khong thay chu tren COM nao, doi sang W21 (xem README, muc "Khong thay gi tren serial").
+set_io -port_name UART_TXD -pin_name Y21 -fixed true -io_std LVCMOS18 -DIRECTION OUTPUT
+
+# DHT22 DATA: chan 7 header J10 (RPI_GPIO4). Bat pull-up noi; van nen co 4,7-10 kOhm ben ngoai.
+set_io -port_name DHT_DATA -pin_name E12 -fixed true -io_std LVCMOS33 -DIRECTION INOUT -RES_PULL Up
+
+set_io -port_name LED1 -pin_name T18 -fixed true -io_std LVCMOS18 -DIRECTION OUTPUT
+set_io -port_name LED2 -pin_name V17 -fixed true -io_std LVCMOS18 -DIRECTION OUTPUT
+set_io -port_name LED3 -pin_name U20 -fixed true -io_std LVCMOS18 -DIRECTION OUTPUT
+set_io -port_name LED4 -pin_name U21 -fixed true -io_std LVCMOS18 -DIRECTION OUTPUT

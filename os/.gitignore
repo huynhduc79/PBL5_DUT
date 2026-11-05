@@ -1,0 +1,7 @@
+build/
+__pycache__/
+# Bi mat: khong bao gio commit
+freertos/app/kmaster.h
+*.key
+key.hex
+rclone.conf

@@ -1,0 +1,6 @@
+work/
+out/
+sim_work/
+*.log
+transcript
+*.wlf

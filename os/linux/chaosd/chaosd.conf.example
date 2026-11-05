@@ -1,0 +1,12 @@
+# /etc/chaosd.conf - cau hinh chaosd (key = value). Tham so dong lenh ghi de len file nay.
+device = /dev/ttyRPMSG0
+data-dir = /var/lib/chaos
+# DHT22: 1 lan doc / 2 s, moi file 1 gio
+rotate-s = 3600
+source = dht22
+channels = 2
+fs-milli-hz = 500
+# so phien (64 mau) cap moi lan lease; DHT22: 16 phien ~ 17 phut
+lease = 16
+key-id = 1
+status-every = 60

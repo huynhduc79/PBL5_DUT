@@ -1,0 +1,24 @@
+/*
+ * kmaster.h.example -> copy thanh kmaster.h (da nam trong .gitignore, KHONG commit).
+ *
+ * Tao khoa ngau nhien tren laptop:
+ *     python -c "import secrets; k=secrets.token_bytes(32); print(k.hex()); print(', '.join(f'0x{b:02x}' for b in k))"
+ * Dong 1 (hex) luu vao key.hex de giai ma tren laptop; dong 2 dan vao mang duoi.
+ *
+ * Luu y: khoa nam trong anh FreeRTOS -> nam trong payload HSS tren the nho/eMMC.
+ * Day chi la muc demo. Huong nang cap: luu trong sNVM cua PolarFire SoC.
+ * Doi khoa thi phai xoa /var/lib/chaos/ctr_state.json tren Linux (bat dau lai ctr tu 0).
+ */
+#ifndef KMASTER_H
+#define KMASTER_H
+
+#include <stdint.h>
+
+static const uint8_t K_MASTER[32] = {
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+};
+
+#endif /* KMASTER_H */
