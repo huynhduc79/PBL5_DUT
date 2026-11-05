@@ -1,0 +1,11 @@
+# Tai lieu tham khao / bao cao dang file nhi phan: giu tren may, khong dua len repo
+*.pdf
+*.docx
+# Bi mat: khong bao gio commit
+*.key
+key.hex
+kmaster.h
+rclone.conf
+License.dat
+# Build
+__pycache__/
