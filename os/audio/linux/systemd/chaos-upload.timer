@@ -1,0 +1,10 @@
+[Unit]
+Description=Chay chaos-upload moi 5 phut
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
