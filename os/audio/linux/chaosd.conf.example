@@ -1,0 +1,11 @@
+# /etc/chaosd.conf - cau hinh chaosd tren board (key = value). Khong chua bi mat nao.
+device = /dev/ttyRPMSG0
+data-dir = /var/lib/chaos
+ctr-owner = rtos
+source = mic
+shift = 2
+channels = 1
+fs-milli-hz = 15625000
+rotate-s = 60
+key-id = 1
+status-every = 60

@@ -1,0 +1,8 @@
+[Unit]
+Description=PBL5 day file .chau da dong len Google Drive (rclone)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/chaos/chaos-upload.sh

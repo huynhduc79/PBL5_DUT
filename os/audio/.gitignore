@@ -1,0 +1,8 @@
+build/
+__pycache__/
+# Bi mat: khong bao gio commit
+*.key
+key.hex
+kmaster.h
+rclone.conf
+nvm.bin
