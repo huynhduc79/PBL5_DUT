@@ -1,0 +1,791 @@
+{
+  "cipher_sets": {
+    "enc_ctrwrap": {
+      "N": 8,
+      "RESEED_INTERVAL": 4,
+      "ctr0": 4294967294,
+      "k_master": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "samples": 24
+    },
+    "enc_key00": {
+      "N": 8,
+      "RESEED_INTERVAL": 64,
+      "ctr0": 0,
+      "k_master": "0000000000000000000000000000000000000000000000000000000000000000",
+      "samples": 140
+    },
+    "enc_keyff": {
+      "N": 8,
+      "RESEED_INTERVAL": 64,
+      "ctr0": 0,
+      "k_master": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "samples": 140
+    },
+    "enc_keyrnd": {
+      "N": 8,
+      "RESEED_INTERVAL": 64,
+      "ctr0": 0,
+      "k_master": "5de575139c41461938df9f5ffa1d2235193ba681abd9cb13468f1690524ab5d2",
+      "samples": 140
+    },
+    "enc_n16_default": {
+      "N": 16,
+      "RESEED_INTERVAL": 64,
+      "ctr0": 0,
+      "k_master": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "samples": 200
+    },
+    "enc_n8_default": {
+      "N": 8,
+      "RESEED_INTERVAL": 64,
+      "ctr0": 0,
+      "k_master": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "samples": 400
+    },
+    "enc_reseed1": {
+      "N": 8,
+      "RESEED_INTERVAL": 1,
+      "ctr0": 0,
+      "k_master": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "samples": 40
+    }
+  },
+  "config_hash": "5f962d6baa0bbd2b9e52029e1a33720e216c30aada7a1394f89ea0afd8aa5d0a",
+  "coverage": {
+    "cipher": {
+      "enc_ctrwrap": {
+        "ctr_first": 4294967294,
+        "ctr_last": 3,
+        "ctr_wrapped": true,
+        "max_idx": 3,
+        "n": 8,
+        "refills_hist": {
+          "1": 23,
+          "2": 1
+        },
+        "reject_by_range": {
+          "3": 4,
+          "5": 14,
+          "6": 4,
+          "7": 4
+        },
+        "reseed_interval": 4,
+        "reseeds": 6,
+        "samples": 24
+      },
+      "enc_key00": {
+        "ctr_first": 0,
+        "ctr_last": 2,
+        "ctr_wrapped": false,
+        "max_idx": 63,
+        "n": 8,
+        "refills_hist": {
+          "1": 138,
+          "2": 2
+        },
+        "reject_by_range": {
+          "3": 44,
+          "5": 75,
+          "6": 44,
+          "7": 13
+        },
+        "reseed_interval": 64,
+        "reseeds": 2,
+        "samples": 140
+      },
+      "enc_keyff": {
+        "ctr_first": 0,
+        "ctr_last": 2,
+        "ctr_wrapped": false,
+        "max_idx": 63,
+        "n": 8,
+        "refills_hist": {
+          "1": 136,
+          "2": 4
+        },
+        "reject_by_range": {
+          "3": 46,
+          "5": 86,
+          "6": 53,
+          "7": 27
+        },
+        "reseed_interval": 64,
+        "reseeds": 2,
+        "samples": 140
+      },
+      "enc_keyrnd": {
+        "ctr_first": 0,
+        "ctr_last": 2,
+        "ctr_wrapped": false,
+        "max_idx": 63,
+        "n": 8,
+        "refills_hist": {
+          "1": 139,
+          "2": 1
+        },
+        "reject_by_range": {
+          "3": 47,
+          "5": 75,
+          "6": 53,
+          "7": 14
+        },
+        "reseed_interval": 64,
+        "reseeds": 2,
+        "samples": 140
+      },
+      "enc_n16_default": {
+        "ctr_first": 0,
+        "ctr_last": 3,
+        "ctr_wrapped": false,
+        "max_idx": 63,
+        "n": 16,
+        "refills_hist": {
+          "2": 124,
+          "3": 76
+        },
+        "reject_by_range": {
+          "10": 117,
+          "11": 88,
+          "12": 61,
+          "13": 50,
+          "14": 30,
+          "15": 14,
+          "3": 67,
+          "5": 137,
+          "6": 64,
+          "7": 23,
+          "9": 163
+        },
+        "reseed_interval": 64,
+        "reseeds": 3,
+        "samples": 200
+      },
+      "enc_n8_default": {
+        "ctr_first": 0,
+        "ctr_last": 6,
+        "ctr_wrapped": false,
+        "max_idx": 63,
+        "n": 8,
+        "refills_hist": {
+          "1": 397,
+          "2": 3
+        },
+        "reject_by_range": {
+          "3": 132,
+          "5": 238,
+          "6": 124,
+          "7": 50
+        },
+        "reseed_interval": 64,
+        "reseeds": 6,
+        "samples": 400
+      },
+      "enc_reseed1": {
+        "ctr_first": 0,
+        "ctr_last": 39,
+        "ctr_wrapped": false,
+        "max_idx": 0,
+        "n": 8,
+        "refills_hist": {
+          "1": 39,
+          "2": 1
+        },
+        "reject_by_range": {
+          "3": 12,
+          "5": 22,
+          "6": 10,
+          "7": 3
+        },
+        "reseed_interval": 1,
+        "reseeds": 40,
+        "samples": 40
+      }
+    },
+    "lts_branch_high": 1116,
+    "lts_branch_low": 1050,
+    "lts_guarded_rows": 20,
+    "lts_guarded_x_in": [
+      "0",
+      "1",
+      "80000000",
+      "ffffffff"
+    ]
+  },
+  "files": {
+    "README.txt": {
+      "bytes": 993,
+      "sha256": "66598c8b6d9466f82ff1bc70d87f450535f100515536748579a897cde76942fa"
+    },
+    "enc_ctrwrap.csv": {
+      "bytes": 945,
+      "sha256": "f09e500119d7cfae31b0c0b2a01e064e836653aebb44747218eaf8548a017cd1"
+    },
+    "enc_ctrwrap.hex": {
+      "bytes": 744,
+      "sha256": "7d564e78de25032eb57d152d1599b6d10dea44d2e46fb3112b0cda4a7bd93f6f"
+    },
+    "enc_key00.csv": {
+      "bytes": 5353,
+      "sha256": "914438aecb9e19ed76cd8f2b27d3162beca5cc9e529ce70369d7d907898e2ef9"
+    },
+    "enc_key00.hex": {
+      "bytes": 4340,
+      "sha256": "4e84be17974ba89e8cdeb80a2d50ab97082a7f558659f87824411934deaf2670"
+    },
+    "enc_keyff.csv": {
+      "bytes": 5353,
+      "sha256": "af35d3dbe01bc19fae5f65659fab0620559a77e6dc16ac0a66dc29027d5626f8"
+    },
+    "enc_keyff.hex": {
+      "bytes": 4340,
+      "sha256": "bbf08ac665eba58fd32734bb5a456429e4534809716b20691ed92e53eeb9a913"
+    },
+    "enc_keyrnd.csv": {
+      "bytes": 5353,
+      "sha256": "77c05545257aa99d569dd21eec4287a7b6fec73ecf13f92a5034c3969016066c"
+    },
+    "enc_keyrnd.hex": {
+      "bytes": 4340,
+      "sha256": "51f187accf54b70fb202202e5593d27c4ca2ad1a8ce69b0ff775b9cf4aaee4cf"
+    },
+    "enc_n16_default.csv": {
+      "bytes": 10433,
+      "sha256": "359ce58ccf40459d19352ce8dcf8a8adf0b4348061445935aab5af982f8ae490"
+    },
+    "enc_n16_default.hex": {
+      "bytes": 9000,
+      "sha256": "2df7d17ee079a36f6af6b7ff6fa5b57cd27ddd46f9db404b8ee2bda630056442"
+    },
+    "enc_n8_default.csv": {
+      "bytes": 15233,
+      "sha256": "f9845a4f4a0c2ed989633886f70cd267b260596af53d48752b4401aeea89813e"
+    },
+    "enc_n8_default.hex": {
+      "bytes": 12400,
+      "sha256": "d1420f2a5f88bb437c8927277300fa21a0c7994366a4495eb9163a58b6e0a18d"
+    },
+    "enc_reseed1.csv": {
+      "bytes": 1553,
+      "sha256": "b59460c62ed50d5daa1b4dbc1e28e5a9b60b74d37c06f5e7bf7253009368bc49"
+    },
+    "enc_reseed1.hex": {
+      "bytes": 1240,
+      "sha256": "25610e63ee844078bc4bd86a8ed77380abcc38b0faab06b07f75a5ca458d3ae1"
+    },
+    "frames.csv": {
+      "bytes": 4481,
+      "sha256": "8849ab5d52c8abda8149c8085befac9f28580eea46e2505aab356eebb968640a"
+    },
+    "kat_crc16.csv": {
+      "bytes": 573,
+      "sha256": "84a7ba7a3af925ef90dc6df4738b28d790f8c91a0addcd5a846b533a79dc9759"
+    },
+    "kat_hmac.csv": {
+      "bytes": 2079,
+      "sha256": "ed240958d04caff9c82e22c223466a9375111a39d3064fd47fe9ad5126b4692e"
+    },
+    "kat_sha256.csv": {
+      "bytes": 4909,
+      "sha256": "79c1406676149a8fa26982f1f2f86194b6b8b86d0fb57a79998d098ba080f689"
+    },
+    "kdf.csv": {
+      "bytes": 7616,
+      "sha256": "e2ef6749ec439df7654d7ebd113ea19b9de278e693b37a4b85ee02c73ee89e51"
+    },
+    "kdf.hex": {
+      "bytes": 7392,
+      "sha256": "6354c378b98ea94914d1fb411dd965b53fb0d49f5134b2c4f5a1f2fe28d422e4"
+    },
+    "kdf_words.csv": {
+      "bytes": 3040,
+      "sha256": "6b344d0bd66520e80501f3fba342401f5392d5571bbb64f668cf610fa1dd161b"
+    },
+    "kdf_words.hex": {
+      "bytes": 2706,
+      "sha256": "22d344856a216177448239805f6bf9d9bc4b498326fd2d6353054869d4b4d68b"
+    },
+    "lts_step.csv": {
+      "bytes": 100876,
+      "sha256": "479bb907dd55c74c01d890ef30a9ceb6fafe442d4d89e5bb989c6d0120e0a067"
+    },
+    "lts_step.hex": {
+      "bytes": 73644,
+      "sha256": "e25f8db9badba9666a6a6577f112fad08f6a461125bca988b903985e6abb4708"
+    },
+    "trace_enc_ctrwrap.txt": {
+      "bytes": 10344,
+      "sha256": "4568328913493da51bb86474eba683258485c795422c8fb5ecb9377a85d72078"
+    },
+    "trace_enc_key00.txt": {
+      "bytes": 58841,
+      "sha256": "9798832b28c122f5c7db0d48d32c5ef8a01e68fd6f82c4bdbe4de45c6f6c9668"
+    },
+    "trace_enc_keyff.txt": {
+      "bytes": 59543,
+      "sha256": "aa20a33684f2c74b944b209f424b6b92e104a30c66697ebb0407212af06e46e7"
+    },
+    "trace_enc_keyrnd.txt": {
+      "bytes": 59053,
+      "sha256": "dd7d868c8913c31b87accef51e514e78823eb7f6345d3cc780b2dcd722a8db59"
+    },
+    "trace_enc_n16_default.txt": {
+      "bytes": 165949,
+      "sha256": "3553943a40da6aafe4be299768d45b42942e5e07eac92645dba4b568f784cd52"
+    },
+    "trace_enc_n8_default.txt": {
+      "bytes": 173025,
+      "sha256": "4177f4ecbaf896106b66bcd3eb0ff670c9820417e56d8b0a9ea97c5bddb72617"
+    },
+    "trace_enc_reseed1.txt": {
+      "bytes": 20419,
+      "sha256": "87ad112aa5074445fe23b1b3dc4ea3106591131828a705867604f2cef5dfb274"
+    }
+  },
+  "params": {
+    "CTR_BITS": 32,
+    "IDX_BITS": 16,
+    "K_MASTER_BYTES": 32,
+    "LABEL_HEX": "73657373696f6e",
+    "N": 8,
+    "RESEED_INTERVAL": 64,
+    "R_MAX_INT": 8589934591,
+    "R_MIN": [
+      1,
+      1
+    ],
+    "R_MIN_INT": 4294967296,
+    "R_SPAN": [
+      1,
+      1
+    ],
+    "R_SPAN_INT": 4294967296,
+    "SPEC_VERSION": "1.0.0",
+    "TRAP_MAX": 1,
+    "W": 32
+  },
+  "seed": 6661,
+  "spec_version": "1.0.0",
+  "tables": {
+    "enc_ctrwrap": {
+      "csv": "enc_ctrwrap.csv",
+      "hex": "enc_ctrwrap.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 8,
+          "name": "p"
+        },
+        {
+          "bits": 8,
+          "name": "c"
+        },
+        {
+          "bits": 8,
+          "name": "k"
+        },
+        {
+          "bits": 32,
+          "name": "pi"
+        },
+        {
+          "bits": 8,
+          "name": "refills"
+        },
+        {
+          "bits": 8,
+          "name": "rejects"
+        }
+      ],
+      "rows": 24,
+      "trace": "trace_enc_ctrwrap.txt",
+      "word_bits": 120
+    },
+    "enc_key00": {
+      "csv": "enc_key00.csv",
+      "hex": "enc_key00.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 8,
+          "name": "p"
+        },
+        {
+          "bits": 8,
+          "name": "c"
+        },
+        {
+          "bits": 8,
+          "name": "k"
+        },
+        {
+          "bits": 32,
+          "name": "pi"
+        },
+        {
+          "bits": 8,
+          "name": "refills"
+        },
+        {
+          "bits": 8,
+          "name": "rejects"
+        }
+      ],
+      "rows": 140,
+      "trace": "trace_enc_key00.txt",
+      "word_bits": 120
+    },
+    "enc_keyff": {
+      "csv": "enc_keyff.csv",
+      "hex": "enc_keyff.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 8,
+          "name": "p"
+        },
+        {
+          "bits": 8,
+          "name": "c"
+        },
+        {
+          "bits": 8,
+          "name": "k"
+        },
+        {
+          "bits": 32,
+          "name": "pi"
+        },
+        {
+          "bits": 8,
+          "name": "refills"
+        },
+        {
+          "bits": 8,
+          "name": "rejects"
+        }
+      ],
+      "rows": 140,
+      "trace": "trace_enc_keyff.txt",
+      "word_bits": 120
+    },
+    "enc_keyrnd": {
+      "csv": "enc_keyrnd.csv",
+      "hex": "enc_keyrnd.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 8,
+          "name": "p"
+        },
+        {
+          "bits": 8,
+          "name": "c"
+        },
+        {
+          "bits": 8,
+          "name": "k"
+        },
+        {
+          "bits": 32,
+          "name": "pi"
+        },
+        {
+          "bits": 8,
+          "name": "refills"
+        },
+        {
+          "bits": 8,
+          "name": "rejects"
+        }
+      ],
+      "rows": 140,
+      "trace": "trace_enc_keyrnd.txt",
+      "word_bits": 120
+    },
+    "enc_n16_default": {
+      "csv": "enc_n16_default.csv",
+      "hex": "enc_n16_default.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 16,
+          "name": "p"
+        },
+        {
+          "bits": 16,
+          "name": "c"
+        },
+        {
+          "bits": 16,
+          "name": "k"
+        },
+        {
+          "bits": 64,
+          "name": "pi"
+        },
+        {
+          "bits": 8,
+          "name": "refills"
+        },
+        {
+          "bits": 8,
+          "name": "rejects"
+        }
+      ],
+      "rows": 200,
+      "trace": "trace_enc_n16_default.txt",
+      "word_bits": 176
+    },
+    "enc_n8_default": {
+      "csv": "enc_n8_default.csv",
+      "hex": "enc_n8_default.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 8,
+          "name": "p"
+        },
+        {
+          "bits": 8,
+          "name": "c"
+        },
+        {
+          "bits": 8,
+          "name": "k"
+        },
+        {
+          "bits": 32,
+          "name": "pi"
+        },
+        {
+          "bits": 8,
+          "name": "refills"
+        },
+        {
+          "bits": 8,
+          "name": "rejects"
+        }
+      ],
+      "rows": 400,
+      "trace": "trace_enc_n8_default.txt",
+      "word_bits": 120
+    },
+    "enc_reseed1": {
+      "csv": "enc_reseed1.csv",
+      "hex": "enc_reseed1.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 8,
+          "name": "p"
+        },
+        {
+          "bits": 8,
+          "name": "c"
+        },
+        {
+          "bits": 8,
+          "name": "k"
+        },
+        {
+          "bits": 32,
+          "name": "pi"
+        },
+        {
+          "bits": 8,
+          "name": "refills"
+        },
+        {
+          "bits": 8,
+          "name": "rejects"
+        }
+      ],
+      "rows": 40,
+      "trace": "trace_enc_reseed1.txt",
+      "word_bits": 120
+    },
+    "frames": {
+      "csv": "frames.csv",
+      "hex": null,
+      "layout": [
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 16,
+          "name": "idx"
+        },
+        {
+          "bits": 8,
+          "name": "n"
+        },
+        {
+          "bits": 16,
+          "name": "c"
+        },
+        {
+          "bits": 16,
+          "name": "crc"
+        }
+      ],
+      "rows": 65,
+      "word_bits": null
+    },
+    "kat_crc16": {
+      "csv": "kat_crc16.csv",
+      "hex": null,
+      "layout": [
+        {
+          "bits": 16,
+          "name": "crc"
+        }
+      ],
+      "rows": 25,
+      "word_bits": null
+    },
+    "kat_hmac": {
+      "csv": "kat_hmac.csv",
+      "hex": null,
+      "layout": [],
+      "rows": 13,
+      "word_bits": null
+    },
+    "kat_sha256": {
+      "csv": "kat_sha256.csv",
+      "hex": null,
+      "layout": [],
+      "rows": 16,
+      "word_bits": null
+    },
+    "kdf": {
+      "csv": "kdf.csv",
+      "hex": "kdf.hex",
+      "layout": [
+        {
+          "bits": 256,
+          "name": "k_master"
+        },
+        {
+          "bits": 32,
+          "name": "ctr"
+        },
+        {
+          "bits": 256,
+          "name": "k_session"
+        },
+        {
+          "bits": 32,
+          "name": "x0"
+        },
+        {
+          "bits": 34,
+          "name": "r_int"
+        }
+      ],
+      "rows": 48,
+      "word_bits": 610
+    },
+    "kdf_words": {
+      "csv": "kdf_words.csv",
+      "hex": "kdf_words.hex",
+      "layout": [
+        {
+          "bits": 256,
+          "name": "k_session"
+        },
+        {
+          "bits": 32,
+          "name": "x0"
+        },
+        {
+          "bits": 34,
+          "name": "r_int"
+        }
+      ],
+      "rows": 33,
+      "word_bits": 322
+    },
+    "lts_step": {
+      "csv": "lts_step.csv",
+      "hex": "lts_step.hex",
+      "layout": [
+        {
+          "bits": 32,
+          "name": "x_in"
+        },
+        {
+          "bits": 34,
+          "name": "r_int"
+        },
+        {
+          "bits": 32,
+          "name": "x0"
+        },
+        {
+          "bits": 32,
+          "name": "x_out"
+        },
+        {
+          "bits": 1,
+          "name": "branch"
+        },
+        {
+          "bits": 1,
+          "name": "guarded"
+        }
+      ],
+      "rows": 2166,
+      "word_bits": 132
+    }
+  }
+}

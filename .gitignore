@@ -9,3 +9,13 @@ rclone.conf
 License.dat
 # Build
 __pycache__/
+
+# --- them vao cuoi .gitignore cua repo (nhanh fpga/rtl-v1) ---
+# Mo phong / Python
+sim/_build/
+.pytest_cache/
+# Project Libero / SoftConsole sinh ra
+fpga/soc/MPFS_DISCOVERY/
+fpga/soc/script_support/components/MSS/
+fpga/soc/fpe_job/
+fpga/soc/*.log
