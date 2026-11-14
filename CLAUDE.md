@@ -18,8 +18,8 @@ File này được Claude Code của **cả hai thành viên** đọc mỗi khi 
 Claude: khi được yêu cầu sửa file **không thuộc thư mục của người đang dùng**, hãy nhắc người đó và đề xuất mở issue/PR thay vì sửa thẳng.
 
 ## Hợp đồng giao tiếp (KHÔNG tự ý đổi)
-- Bản đồ thanh ghi + định dạng từ `OUT_DATA`: mục 7 của `docs/thiet_ke_he_thong_inmp441.md`.
-- Định dạng file `.chau`: mục 8 của cùng tài liệu.
+- **Bản chốt v1.0: `docs/HOP_DONG_FPGA_RTOS.md`** — bản đồ thanh ghi, từ `OUT_DATA`, định dạng `.chau`, chính sách `ctr`, địa chỉ gốc `0x4000_0500`, ngắt `MSS_INT_F2M[16]`, chân I2S.
+- Mục 7, 8 của `docs/thiet_ke_he_thong_inmp441.md` là bản nháp cũ; chỗ nào khác nhau thì theo `HOP_DONG_FPGA_RTOS.md`.
 - Muốn đổi: sửa tài liệu trong một PR riêng, cả hai duyệt, tăng phiên bản tài liệu; nếu đổi thuật toán thì nâng `SPEC_VERSION` và sinh lại vector (`python -m refmodel.gen_vectors vectors/out`).
 
 ## Quy ước
@@ -37,9 +37,9 @@ python tools/decode_chau.py <file.chau> --key key.hex # giải mã file ghi âm
 ```
 
 ## Trạng thái hiện tại (cập nhật khi xong mốc)
-- [ ] M0 – chốt mục 7, 8 của tài liệu thiết kế
-- [ ] M1 – thanh ghi + cipher_core N=16, khớp `enc_n16_default`
-- [ ] M2 – RAMP/SINE + FIFO + ngắt, giải mã đúng RAMP
+- [x] M0 – chốt mục 7, 8 của tài liệu thiết kế → `docs/HOP_DONG_FPGA_RTOS.md` v1.0
+- [x] M1 – thanh ghi + cipher_core N=16, khớp `enc_n16_default` (mô phỏng + board 14/11/2026: 43/43 PASS)
+- [ ] M2 – RAMP/SINE + FIFO + ngắt, giải mã đúng RAMP (phần FPGA xong trên board; còn đường RTOS → `.chau` → `decode_chau.py`)
 - [ ] M3 – INMP441 + AMP Linux/RPMsg
 - [ ] M4 – Drive, chạy 1 giờ, DROP_CNT = 0
 
