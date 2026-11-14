@@ -1,0 +1,11 @@
+rtl/sha256_core.v
+rtl/kdf_params.v
+rtl/hmac_kdf.v
+rtl/session_mgr.v
+rtl/lts_step.v
+rtl/lts_iter.v
+rtl/fy_shuffle.v
+rtl/permute_xor.v
+rtl/core_fsm.v
+rtl/chaos_core.v
+tb/tb_cycles.v

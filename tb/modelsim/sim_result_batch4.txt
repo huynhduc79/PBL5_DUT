@@ -1,0 +1,472 @@
+# ** Warning: (vlib-34) Library already exists at "manual_lib".
+# Errors: 0, Warnings: 1
+# === chaos_cipher_top : bien dich ===
+# Model Technology ModelSim Microsemi Pro vlog 2025.3 Compiler 2025.09 Sep 11 2025
+# Start time: 20:58:56 on Nov 06,2026
+# vlog -reportprogress 300 -work manual_lib ../hdl/sha256_core.v ../hdl/kdf_params.v ../hdl/hmac_kdf.v ../hdl/session_mgr.v ../hdl/lts_step.v ../hdl/lts_iter.v ../hdl/fy_shuffle.v ../hdl/permute_xor.v ../hdl/core_fsm.v ../hdl/chaos_core.v ../hdl/axi4l_slave_regs.v ../hdl/chaos_cipher_top.v ../stimulus/tb_chaos_cipher_top.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module sha256_core
+# -- Compiling module kdf_params
+# -- Compiling module hmac_kdf
+# -- Compiling module session_mgr
+# -- Compiling module lts_step
+# -- Compiling module lts_iter
+# -- Compiling module fy_shuffle
+# -- Compiling module permute_xor
+# -- Compiling module core_fsm
+# -- Compiling module chaos_core
+# -- Compiling module axi4l_slave_regs
+# -- Compiling module chaos_cipher_top
+# -- Compiling module top_harness
+# -- Compiling module tb_chaos_cipher_top
+# 
+# Top level modules:
+# 	tb_chaos_cipher_top
+# End time: 20:58:57 on Nov 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=0 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=0" "+GAP=0" 
+# Start time: 20:58:57 on Nov 06,2026
+# //  ModelSim Microsemi Pro 2025.3 Sep 11 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 0, RI=64: 400 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 257706 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:03 on Nov 06,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=0 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=0" "+GAP=1" 
+# Start time: 20:59:03 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 0, RI=64: 400 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 428336 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:07 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=1 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=1" "+GAP=0" 
+# Start time: 20:59:07 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 1, RI=64: 200 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 185426 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:10 on Nov 06,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=1 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=1" "+GAP=1" 
+# Start time: 20:59:11 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 1, RI=64: 200 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 273226 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:14 on Nov 06,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=2 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=2" "+GAP=0" 
+# Start time: 20:59:14 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 2, RI=1: 40 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 151526 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:18 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=2 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=2" "+GAP=1" 
+# Start time: 20:59:18 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 2, RI=1: 40 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 175206 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:22 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=3 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=3" "+GAP=0" 
+# Start time: 20:59:22 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 3, RI=4: 24 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 42406 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:26 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=3 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=3" "+GAP=1" 
+# Start time: 20:59:26 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 3, RI=4: 24 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 60006 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:30 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=4 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=4" "+GAP=0" 
+# Start time: 20:59:30 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 4, RI=64: 140 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 96106 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:34 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=4 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=4" "+GAP=1" 
+# Start time: 20:59:34 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 4, RI=64: 140 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 160416 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:38 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=5 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=5" "+GAP=0" 
+# Start time: 20:59:38 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 5, RI=64: 140 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 96446 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:42 on Nov 06,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=5 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=5" "+GAP=1" 
+# Start time: 20:59:42 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 5, RI=64: 140 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 161026 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:47 on Nov 06,2026, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=6 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=6" "+GAP=0" 
+# Start time: 20:59:47 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 6, RI=64: 140 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 96146 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 20:59:53 on Nov 06,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=6 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=6" "+GAP=1" 
+# Start time: 20:59:54 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 6, RI=64: 140 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 161066 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 21:00:00 on Nov 06,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=7 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=7" "+GAP=0" 
+# Start time: 21:00:00 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 7, RI=4: 90 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 123966 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 21:00:07 on Nov 06,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=7 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=7" "+GAP=1" 
+# Start time: 21:00:07 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 7, RI=4: 90 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 168916 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 21:00:14 on Nov 06,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=8 GAP=0 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=8" "+GAP=0" 
+# Start time: 21:00:14 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 8, RI=64: 150 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=0)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 140726 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 21:00:21 on Nov 06,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# === chaos_cipher_top : SET=8 GAP=1 ===
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop manual_lib.tb_chaos_cipher_top "+SET=8" "+GAP=1" 
+# Start time: 21:00:21 on Nov 06,2026
+# Loading manual_lib.tb_chaos_cipher_top
+# Loading manual_lib.top_harness
+# Loading manual_lib.chaos_cipher_top
+# Loading manual_lib.axi4l_slave_regs
+# Loading manual_lib.chaos_core
+# Loading manual_lib.core_fsm
+# Loading manual_lib.session_mgr
+# Loading manual_lib.hmac_kdf
+# Loading manual_lib.sha256_core
+# Loading manual_lib.kdf_params
+# Loading manual_lib.lts_iter
+# Loading manual_lib.lts_step
+# Loading manual_lib.fy_shuffle
+# Loading manual_lib.permute_xor
+# PASS: bo 8, RI=64: 150 mau qua AXI4-Lite khop golden (ct, ctr, idx, steps, refills, rejects, thanh ghi, irq) (GAP=1)
+# ** Note: $finish    : ../stimulus/tb_chaos_cipher_top.v(448)
+#    Time: 208066 ns  Iteration: 0  Instance: /tb_chaos_cipher_top
+# Break in Module tb_chaos_cipher_top at ../stimulus/tb_chaos_cipher_top.v line 448
+# End time: 21:00:27 on Nov 06,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# === XONG ===
